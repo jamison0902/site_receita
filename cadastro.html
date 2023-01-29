@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" >
+		
+		<!-- Bootstrap JS -->
+		<script src= "js/bootstrap.bundle.min.js" ></script>
+
+		<title>Receitas de Frango - Cadastro</title>
+	</head>
+	<body>
+		<header>			
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">				  
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+					  <a class="nav-link" href="index.html">Home</a>
+					  <a class="nav-link" href="receitas.html">Receitas</a>
+					  <a class="nav-link active" aria-current="page" href="#">Cadastro</a>					  
+					</div>
+				  </div>
+				</div>
+			  </nav>
+		</header>
+		<main class="d-flex flex-column min-vh-100">
+			<div class="container py-5">
+				<div class="p-5 mb-4 bg-light rounded-3">					
+					<div class="container-fluid">
+						<div class="row">							
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" >
+								<h1>Cadastro</h1>
+								<form action="https://api.staticforms.xyz/submit" method="post">
+									<div class="mb-3 mt-3">
+										<label for="name" class="form-label">Nome:</label>
+										<input type="text" class="form-control" id="name" placeholder="Digite seu nome" name="name" required>
+									</div>
+									<div class="mb-3">
+										<label for="email" class="form-label">E-mail:</label>
+										<input type="email" class="form-control" id="email" placeholder="Digite o e-mail" name="email" required>
+									</div>
+									<div class="mb-3">
+										<label for="cep" class="form-label">CEP:</label>
+										<input type="text" class="form-control" id="cep" placeholder="Ex.: 00000-000" name="cep" pattern= "\d{5}-?\d{3}" required>
+									</div>
+									<div class="mb-3">
+										<label for="bairro" class="form-label">Bairro:</label>
+										<input type="text" class="form-control" id="bairro" placeholder="Digite o bairro" name="bairro" required>
+									</div>
+									<div class="mb-3">
+										<label for="rua" class="form-label">Rua:</label>
+										<input type="text" class="form-control" id="rua" placeholder="Digite a rua" name="rua" required>
+									</div>	
+									<div class="row mb-3">
+										<div class="col">
+											<label for="n" class="form-label">N°:</label>
+											<input type="text" class="form-control" placeholder="Digite o Número" name="n" required>
+										</div>
+										<div class="col">
+											<label for="complemento" class="form-label">Complemento:</label>
+											<input type="text" class="form-control" placeholder="Digite o complemento" name="complemento" required>
+										</div>										
+									</div>
+									<div class="row mb-3">
+										<div class="col">
+											<label for="cidade" class="form-label">Cidade:</label>
+											<input type="text" class="form-control" placeholder="Digite a Cidade" name="cidade" required>
+										</div>
+										<div class="col">
+											<label for="uf" class="form-label">UF:</label>
+											<input type="text" class="form-control" placeholder="Digite o estado" name="uf" required>
+										</div>										
+									</div>
+									<input type="hidden" name="accessKey" value="5e09aba8-d5f2-4ac0-9cc4-fb13198bec64">
+									<input type="hidden" name="redirectTo" value="http://localhost/receita/cadastro.html">
+									<button type="submit" class="btn-outline-secondary mt-3">Enviar</button>									
+								</form>
+							</div>								
+						</div>
+					</div>	
+				</div>								
+			</div> 
+
+		</main>
+
+		<!-- Copyright -->
+		<footer class="bg-dark text-center text-lg-start mt-auto">			
+			<div class="text-center p-3" style="color: rgb(255, 255, 255);">© 2023 Copyright</div>			
+		</footer>
+ 	</body>
+</html>

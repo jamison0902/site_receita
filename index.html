@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Minha página de teste modificada 1 2 3</title>
-  </head>
-  <body>
-    <img src="imagens/firefox-icon.png" alt="minha página de teste">
-  </body>
+<html lang="pt-BR">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" >
+		
+		<!-- Bootstrap JS -->
+		<script src= "js/bootstrap.bundle.min.js" ></script>
+
+		<title>Receitas de Frango - Home</title>
+	</head>
+	<body>
+		<header>			
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">				  
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+					  <a class="nav-link active" aria-current="page" href="#">Home</a>
+					  <a class="nav-link" href="receitas.html">Receitas</a>
+					  <a class="nav-link" href="cadastro.html">Cadastro</a>					  
+					</div>
+				  </div>
+				</div>
+			  </nav>
+		</header>
+		<main class="d-flex flex-column min-vh-100">
+
+			<div class="container py-4">
+
+				<div class="p-3 mb-4 bg-light rounded-3">					
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+								<img src="img/inicio.png" class="img-fluid" alt="Receitas de Frango">	
+							</div>
+							<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9" >
+								<h1>Prêmio WebAward 2023</h1>
+								<p>O Receitas de Frango é uma plataforma gratuita e interativa de receitas que foi eleita como o melhor site de receitas e culinária pela Web Marketing Association, durante a premiação “2023 WebAward Competition”, divulgada pela entidade na última sexta-feira (10).</p>
+								<button class="btn btn-outline-secondary" type="button">Leia mais...</button>
+							</div>								
+						</div>
+					</div>	
+				</div>
+
+				<div class="row align-items-md-stretch">
+					<div class="col-md-6 pb-2">
+						<div class="h-100 p-5 text-bg-dark rounded-3">
+							<h2>Receita do Dia</h2>
+							<img src="img/role.jpg" class="pb-2 img-fluid" alt="Frango rolê recheado">							
+							<p>Que tal variar o frango e fazer um prato saboroso e refinado com uma receita maravilhoda de <b>Frango Rolê Recheado</b></p>
+							<button class="btn btn-outline-light" type="button">Visualizar</button>
+						</div>
+					</div>
+					<div class="col-md-6 pb-2">
+						<div class="h-100 p-5 bg-light border rounded-3">
+							<h2>A mais Pedida</h2>
+							<img src="img/isca.jpg" class="pb-2 img-fluid" alt="Frango rolê recheado">							
+							<p>Essa é a receita mais visualizada pelos nossos visitantes, um franguinho bem frito e crocante com <b>Isca de Frango Bêbada</b></p>
+							<button class="btn btn-outline-secondary" type="button">Visualizar</button>
+						</div>
+					</div>
+				</div>
+							
+			</div> 
+
+		</main>
+
+		<!-- Copyright -->
+		<footer class="bg-dark text-center text-lg-start mt-auto">			
+			<div class="text-center p-3" style="color: rgb(255, 255, 255);">© 2023 Copyright</div>			
+		</footer>
+ 	</body>
 </html>
